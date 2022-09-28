@@ -6,24 +6,47 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<div class="grid">
 
-    <p> What is 5/20? </p>
-        <input type="radio" id="first"><label for="first" class="firstAnswerRadio">110</label><br>
-        <input type="radio" id="second"><label for="second" class="secondAnswerRadio">100</label><br>
-        <input type="radio"id="third"><label for="third" class="thirdAnswerRadio">125</label><br>
+<div class="quiz-container" id="quiz" >
+    <div class="quiz-header">
+        <h1> Quiz for Kids</h1>
 
-    <p>What is 5*5?</p>
-        <input type="radio" id="2First"><label for="2First" class="2Q1Radio">35</label><br>
-        <input type="radio" id="2second"><label for="2second" class="2Q2Radio">25</label><br>
-        <input type="radio"id="2third"><label for="2third" class="2Q3Radio">40</label><br>
+    <p> WHAT IS 5/20? </p>
+        <input type="radio" id="first" name="question1" value = "10"><label for="first" class="firstAnswerRadio">10</label><br>
+        <input type="radio" id="second"name="question1" value="15"><label for="second" class="secondAnswerRadio">15</label><br>
+        <input type="radio"id="third" name="question1" value="0,25" class="correct"><label for="third" class="thirdAnswerRadio">0,25</label><br>
 
 
-    <p>What is 9*9?</p>
-        <input type="radio" id="firstOption"><label for="firstOption" class="firstOptionThirdQ">81</label> <br>
-        <input type="radio"id="secondOption"><label for="secondOption" class="secondOptionThirdQ">78</label><br>
-        <input type="radio" id="thirdOption"><label for="thirdOption" class="thirdOptionThirdQ">56</label><br>
+    <p>WHAT IS 5*5?</p>
+        <input type="radio" id="2first" name="what is 5*5"><label for="2first" class="2Q1Radio">35</label><br>
+        <input type="radio" id="2second"name="what is 5*5" class="correct2" ><label for="2second" class="2Q2Radio">25</label><br>
+        <input type="radio"id="2third"name="what is 5*5"><label for="2third" class="2Q3Radio">40</label><br>
+
+    <p>WHAT IS 9*9?</p>
+        <input type="radio" id="firstOption"name="what is 9*9" class="correct3" ><label for="firstOption" class="firstOptionThirdQ">81</label> <br>
+        <input type="radio"id="secondOption"name="what is 9*9"><label for="secondOption" class="secondOptionThirdQ">78</label><br>
+        <input type="radio" id="thirdOption"name="what is 9*9"><label for="thirdOption" class="thirdOptionThirdQ">56</label><br>
+
+    </div>
+<input type="submit" name="questions" value="Submit Quiz" onclick="result()" class="submitButton">
+
 </div>
+
+<script type="text/javascript">
+    function result (){
+        let score = 0;
+        if (document.getElementById('correct').checked){
+        }
+        score++;
+        if (document.getElementById('correct2').checked){
+        }
+        score++;
+        if (document.getElementById('correct3').checked){
+        }
+        score++;
+    }
+        document.write("Your score is: "+score);
+</script>
 
 <script src="main.js"></script>
 </body>
