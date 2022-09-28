@@ -9,7 +9,7 @@
 
 <div class="quiz-container" id="quiz" >
     <div class="quiz-header">
-        <h1> Quiz for Kids</h1>
+        <h1> Mathematical Quiz </h1>
 
     <p> WHAT IS 5/20? </p>
         <input type="radio" id="first" name="question1" value = "10"><label for="first" class="firstAnswerRadio">10</label><br>
@@ -23,16 +23,17 @@
         <input type="radio"id="2third"name="what is 5*5"><label for="2third" class="2Q3Radio">40</label><br>
 
     <p>WHAT IS 9*9?</p>
-        <input type="radio" id="firstOption"name="what is 9*9" class="correct3" ><label for="firstOption" class="firstOptionThirdQ">81</label> <br>
-        <input type="radio"id="secondOption"name="what is 9*9"><label for="secondOption" class="secondOptionThirdQ">78</label><br>
-        <input type="radio" id="thirdOption"name="what is 9*9"><label for="thirdOption" class="thirdOptionThirdQ">56</label><br>
+        <input type="radio" id="3first"name="what is 9*9" class="correct3" ><label for="3first" class="firstOptionThirdQ">81</label> <br>
+        <input type="radio"id="3second"name="what is 9*9"><label for="3second" class="secondOptionThirdQ">78</label><br>
+        <input type="radio" id="3third"name="what is 9*9"><label for="3third" class="thirdOptionThirdQ">56</label><br>
 
     </div>
-<input type="submit" name="questions" value="Submit Quiz" onclick="result()" class="submitButton">
+    <button ><input type="submit" name="questions" value="Submit Quiz"
+                    onclick="result()" class="submitButton" id="submitBtn"> </button>
 
 </div>
 
-<script type="text/javascript">
+<script type="text/javascript" id="checkOut">
     function result (){
         let score = 0;
         if (document.getElementById('correct').checked){

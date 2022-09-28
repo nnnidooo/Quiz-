@@ -1,32 +1,19 @@
 
+function getResults() {
+    const amountCorrect = 0;
 
-const myQuestions = [
-    {
-        question: 'What is 5+10?',
-        answers: {
-            a: '3',
-            b: '15',
-            c: '7'
-    },
-    correctAnswer: 'b'},
-    {
-        question: 'What is 15/3?',
-        answers: {
-            a:'5',
-            b: '9',
-            c: '2'
-        },
-        correctAnswer: 'a'},
-    {
-        question: 'What is 5*5?',
-        answers: {
-            a:'25',
-            b: '20',
-            c: '31'
-        },
-        correctAnswer:'a'
-    }
-
-
-]
-
+    for (let i; i < 3; i++) {
+        const radioNames = document.getElementsByClassName('correct' + i);
+        for (let j = 0; j < radioNames.length; j++) {
+            const radioValues = radioNames[j];
+            if (radioValues.checked) {
+                if (radioValues.value=='correct'){
+                    amountCorrect++;
+                    radioValues.nextSibling.style.color = 'green';
+                }
+            } else {
+                radioValues.nextSibling.style.color = 'red';
+            }
+                }
+            }
+        }
