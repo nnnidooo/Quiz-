@@ -1,8 +1,5 @@
 
 
-
-
-
 const finish = document.querySelector('#submitBtn');
 finish.addEventListener("click", function (){
     const correctAmount = document.querySelectorAll('.correct');
@@ -10,8 +7,12 @@ finish.addEventListener("click", function (){
     for (let i = 0; i < correctAmount.length ; i++) {
         if (correctAmount[i].checked){
             howManyCorrect++;
-
         }
     }
     console.log("You answered " + howManyCorrect + " correct");
+})
+
+const whenDone = finish.querySelector('.submitBox');
+whenDone.addEventListener('click', function (){
+
 })

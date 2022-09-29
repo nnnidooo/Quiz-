@@ -7,12 +7,24 @@ body {
     align-items: center;
     height: 100vh;
 }
+.submitBox{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border: 15px solid lightcoral;
+    padding: 50px;
+    margin: 20px;
+}
+h1{
+
+}
 
 .QBox {
     padding:4rem;
 }
 Button{
-    background: chocolate;
+    background: lightblue;
     color:white;
     border: none;
     display: block;
@@ -22,7 +34,7 @@ Button{
     padding: 1.1rem;
 }
 .submitButton{
-    background: chocolate;
+    background: lightblue;
 }
 
 label{
