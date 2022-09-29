@@ -1,19 +1,16 @@
 
-function getResults() {
-    const amountCorrect = 0;
 
-    for (let i; i < 3; i++) {
-        const radioNames = document.getElementsByClassName('correct' + i);
-        for (let j = 0; j < radioNames.length; j++) {
-            const radioValues = radioNames[j];
-            if (radioValues.checked) {
-                if (radioValues.value=='correct'){
-                    amountCorrect++;
-                    radioValues.nextSibling.style.color = 'green';
-                }
-            } else {
-                radioValues.nextSibling.style.color = 'red';
-            }
-                }
-            }
-        }
+
+
+
+const correctAmount = document.querySelectorAll('.correct')
+for (let i =0;i<correctAmount; i++){
+
+
+}
+
+
+const finish = document.querySelector('#submitBtn');
+submitButton.addEventListener("click", function (){
+    alert('You finished the quiz')
+})
