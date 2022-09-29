@@ -3,14 +3,15 @@
 
 
 
-const correctAmount = document.querySelectorAll('.correct')
-for (let i =0;i<correctAmount; i++){
-
-
-}
-
-
 const finish = document.querySelector('#submitBtn');
-submitButton.addEventListener("click", function (){
-    alert('You finished the quiz')
+finish.addEventListener("click", function (){
+    const correctAmount = document.querySelectorAll('.correct');
+    let howManyCorrect = 0;
+    for (let i = 0; i < correctAmount.length ; i++) {
+        if (correctAmount[i].checked){
+            howManyCorrect++;
+
+        }
+    }
+    console.log("You answered " + howManyCorrect + " correct");
 })
