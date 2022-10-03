@@ -11,9 +11,9 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 450px;
     border: 15px solid lightcoral;
-    padding: 50px;
+    padding: 4rem;
     margin: 20px;
 }
 h1{
