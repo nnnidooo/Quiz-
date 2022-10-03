@@ -10,9 +10,10 @@ finish.addEventListener("click", function (){
         }
     }
     console.log("You answered " + howManyCorrect + " correct");
-})
-
-const whenDone = finish.querySelector('.submitBox');
-whenDone.addEventListener('click', function (){
 
 })
+//https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/ inspiration;
+
+document.getElementById('submitBtn').onclick = function () {
+        document.getElementById('result').style.display = 'block';
+}
