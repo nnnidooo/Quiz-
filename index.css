@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
 }
-.submitBox{
+.submit-box{
     display: none;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ body {
 .QBox {
     padding:4rem;
 }
-Button {
+button {
     background: lightblue;
     color:white;
     border: none;
@@ -47,7 +47,7 @@ Button {
     font-size: 1.1rem;
     padding: 1.1rem;
 }
-.submitButton{
+.submit-button{
     background: lightblue;
 }
 
