@@ -17,31 +17,38 @@
         <h1> Mathematical Quiz </h1>
 
     <p> WHAT IS 5/20? </p>
-        <input type="radio" id="first" name="question1" value = "10"><label for="first" class="firstAnswerRadio">10</label><br>
-        <input type="radio" id="second"name="question1" value="15"><label for="second" class="secondAnswerRadio">15</label><br>
-        <input type="radio"id="third" name="question1" value="0,25" class="correct"><label for="third" class="thirdAnswerRadio">0,25</label><br>
+        <ul>
+            <li><input type="radio" id="first" name="question1" value = "10"><label for="first" class="firstAnswerRadio">10</label><br> </li>
+            <li><input type="radio" id="second"name="question1" value="15"><label for="second" class="secondAnswerRadio">15</label><br> </li>
+            <li><input type="radio"id="third" name="question1" value="0,25" class="correct"><label for="third" class="thirdAnswerRadio">0,25</label><br> </li>
+        </ul>
 
-        <div class="submit-box" id="result">
-
-            <div id="output"></div>
-
-        </div>
 
     <p>WHAT IS 5*5?</p>
-        <input type="radio" id="2first" name="what is 5*5"><label for="2first" class="2Q1Radio">35</label><br>
-        <input type="radio" id="2second"name="what is 5*5" class="correct" ><label for="2second" class="2Q2Radio">25</label><br>
-        <input type="radio"id="2third"name="what is 5*5"><label for="2third" class="2Q3Radio">40</label><br>
+        <ul>
+            <li>  <input type="radio" id="2first" name="what is 5*5"><label for="2first" class="2Q1Radio">35</label><br> </li>
+            <li>  <input type="radio" id="2second"name="what is 5*5" class="correct" ><label for="2second" class="2Q2Radio">25</label><br> </li>
+            <li>  <input type="radio"id="2third"name="what is 5*5"><label for="2third" class="2Q3Radio">40</label><br> </li>
+        </ul>
 
     <p>WHAT IS 9*9?</p>
-        <input type="radio" id="3first"name="what is 9*9" class="correct" ><label for="3first" class="firstOptionThirdQ">81</label> <br>
-        <input type="radio"id="3second"name="what is 9*9"><label for="3second" class="secondOptionThirdQ">78</label><br>
-        <input type="radio" id="3third"name="what is 9*9"><label for="3third" class="thirdOptionThirdQ">56</label><br>
-
+        <ul>
+            <li><input type="radio" id="3first"name="what is 9*9" class="correct" ><label for="3first" class="firstOptionThirdQ">81</label> <br> </li>
+            <li><input type="radio"id="3second"name="what is 9*9"><label for="3second" class="secondOptionThirdQ">78</label><br> </li>
+            <li><input type="radio" id="3third"name="what is 9*9"><label for="3third" class="thirdOptionThirdQ">56</label><br> </li>
+        </ul>
 
     </div>
     <button ><input type="submit" name="questions" value="Submit Quiz" class="submit-button" id="submit-btn"> </button>
 
 </div>
+
+<div class="submit-box" id="result">
+
+    <div id="output"></div>
+
+</div>
+
 
 <script src="main.js"></script>
 </body>
